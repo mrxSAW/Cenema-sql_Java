@@ -55,14 +55,13 @@ public class Main {
         System.out.print("Choice: ");
     }
 
-    // Reads an int and consumes the newline so following nextLine() works
     private static int readInt() {
         while (!scanner.hasNextInt()) {
             System.out.print("Entrée invalide. Réessayez: ");
             scanner.next();
         }
         int val = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
         return val;
     }
 
