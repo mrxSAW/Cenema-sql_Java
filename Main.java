@@ -35,10 +35,7 @@ public class Main {
                 }
             } catch (SQLException e) {
                 System.err.println("DB error: " + e.getMessage());
-            } catch (Exception e) {
-                System.err.println("Unexpected error: " + e.getMessage());
-                e.printStackTrace();
-            }
+            } 
         }
     }
 
